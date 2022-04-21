@@ -1,2 +1,2 @@
 # samyang
-## www.samyangfood strat 2022.04.21
+## samyangfood strat 2022.04.21
