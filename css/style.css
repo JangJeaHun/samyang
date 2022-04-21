@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Noto Sans",'Noto Sans KR',"Nanum Gothic",sans-serif;
+    font-size: 12px;
+}
+a:visited,a:link{
+    text-decoration: none;
+    color: inherit;
+}
+ul,li{
+    list-style: none;
+}
+.wrap{
+    margin: 0 auto;
+    width: 1140px;
+}
+
+header{
+    border-top: 4px orangered solid;
+}
+header>#gnb_top{
+    background-color: #f4f4f6;
+}
+header>#gnb_top>.wrap{
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    align-items: center;
+    
+}
+header>#gnb_top>.wrap>.utill{
+    display: flex;
+    justify-content: space-between;
+    width: 425px;
+
+}
+
+header>#gnb_top>.wrap #sns{
+    display: flex;
+    justify-content: space-between;
+    width: 119px;
+    
+}
+header>#gnb_top>.wrap #top_link{
+    display: flex;
+    justify-content: space-between;
+    width: 270px;
+}
+header>#gnb_top>.wrap #top_link>a{
+    
+    color: #666;
+    background-color: #fff;
+    font-size: 13px;
+    border: 1px  solid #dedede;
+    line-height: 23px;
+    height: 23px;
+    border-radius: 3px;
+    width: 65px;
+    text-align: center;
+}
+header>#gnb_top>.wrap #top_link>.lang>a{
+    text-align: center;
+    color: #666;
+    font-size: 13px;
+    display: block;
+    border: 1px  solid #dedede;
+    height: 22px;
+    line-height: 22px;
+    width: 52px;
+}
+header>#gnb_top>.wrap #top_link>.lang>ul{
+    display: none;
+}
+
+
+header>.main_header{
+    border-bottom: 2px solid #dedede;
+}
+header>.main_header .wrap{
+    height: 95px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#gnb{
+    display: flex;
+    width: 972px;
+    justify-content: space-around;
+    height: 65px;
+    color: #111;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+#gnb>li>a{
+    display: block;
+    text-align: center;
+    line-height: 65px;
+    height: 65px;
+}
+#gnb>li:hover>a{
+    border-bottom: 3px solid orange;
+}
+#gnb .sub{
+    display: none;
+}
+#gnb .sub>li>a{
+    display: block;
+    color: #867d77;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 38px;
+    text-align: center;
+}
+#gnb .sub>li>a:hover{
+    color: black;
+}
