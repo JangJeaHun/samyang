@@ -11,8 +11,14 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans&family=Noto+Sans+KR&display=swap" rel="stylesheet">
-    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+    <script src="js/slick.js"></script>
+    <!-- <script src="js/VueSimpleScroll.js"></script> -->
+    <!-- <script type="module" src="js/VueSimpleScroll.js"></script> -->
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -120,11 +126,155 @@
                 </div>
             </div>
         </div>
+        <div id="m_back"></div>
     </header>
     <div id="slide">
-
+        <div><a href=""><img src="images/main_slide (1).jpg" alt="메인 슬라이드 이미지"></a></div>
+        <div><a href=""><img src="images/main_slide (2).jpg" alt="메인 슬라이드 이미지"></a></div>
+        <div><a href=""><img src="images/main_slide (3).jpg" alt="메인 슬라이드 이미지"></a></div>
+        <div><a href=""><img src="images/main_slide (4).jpg" alt="메인 슬라이드 이미지"></a></div>
+        <div><a href=""><img src="images/main_slide (5).jpg" alt="메인 슬라이드 이미지"></a></div>
+        <div><a href=""><img src="images/main_slide (6).jpg" alt="메인 슬라이드 이미지"></a></div>
     </div>
+
     <section>
+        <article>
+            <div class="wrap">
+                <h3>삼향 제품소개</h3>
+                <span>
+                    Delicious Together!
+                </span>
+                <p class="main_text">
+                    다양한 제품을<br>
+                    한곳에서 즐기세요!
+                </p>
+                <div class="tab_wrap">
+                    <ul id="main_tab">
+                        <li>
+                            라면
+                            <a><img class="tab01 tab_on" src="images/product_tab1.png" alt="메인 탭 이미지"></a>
+                        </li>
+                        <li>
+                            스낵
+                            <a><img class="tab02" src="images/product_tab2.png" alt="메인 탭 이미지"></a>
+                        </li>
+                        <li>
+                            유제품
+                            <a><img class="tab03" src="images/product_tab3.png" alt="메인 탭 이미지"></a>
+                        </li>
+                        <li>
+                            소스 - 간편식
+                            <a><img class="tab04" src="images/product_tab4.png" alt="메인 탭 이미지"></a>
+                        </li>
+                    </ul>
+                    <div>
+                      <div id="main_box1">
+                        <div><a href="#"><img src="images/bottom_slide (1).png" alt="메인 상품 슬라이드 이미지"></a></div>
+                        <div><a href="#"><img src="images/bottom_slide (2).png" alt="메인 상품 슬라이드 이미지"></a></div>
+                        <div><a href="#"><img src="images/bottom_slide (3).png" alt="메인 상품 슬라이드 이미지"></a></div>
+                        <div><a href="#"><img src="images/bottom_slide (4).png" alt="메인 상품 슬라이드 이미지"></a></div>
+                        <div><a href="#"><img src="images/bottom_slide (5).png" alt="메인 상품 슬라이드 이미지"></a></div>
+                        <div><a href="#"><img src="images/bottom_slide (6).png" alt="메인 상품 슬라이드 이미지"></a></div>
+                        <div><a href="#"><img src="images/bottom_slide (7).png" alt="메인 상품 슬라이드 이미지"></a></div>
+                        <div><a href="#"><img src="images/bottom_slide (8).png" alt="메인 상품 슬라이드 이미지"></a></div>
+                        <div><a href="#"><img src="images/bottom_slide (9).png" alt="메인 상품 슬라이드 이미지"></a></div>
+                        <div><a href="#"><img src="images/bottom_slide (10).png" alt="메인 상품 슬라이드 이미지"></a></div>
+                      </div>
+                      <div class="arrow">
+                        <div class="prev_arrow"><i class="fa fa-arrow-circle-o-left"></i></div>
+                        <div class="next_arrow"><i class="fa fa-arrow-circle-o-right"></i></div>
+                      </div>
+                      <ul id="main_box2">
+                        <li></li>
+                      </ul>
+                      <ul id="main_box3">
+                        <li></li>
+                      </ul>
+                      <ul id="main_box4">
+                        <li></li>
+                      </ul>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </article>
+
+
+
+    <!-- <div id="app">
+        <main class="sticky-container" ref="sticky-container">
+          <div class="sticky">
+            <div class="slide-container">
+              <div class="slide" ref="sl1">
+                <div class="slide-big-text">
+                  <p>안녕하세요.</p>
+                </div>
+              </div>
+              <div class="scdown" ref="scdown">
+                <div class="scdown-text">
+                  아래로 스크롤하세요.
+                </div>
+              </div>
+              <div class="slide" ref="sl2">
+                <div class="slide-big-text">
+                  <p>처음 뵙겠습니다.</p>
+                </div>
+              </div>
+              <div class="slide sl3" ref="sl3">
+                <div class="slide-big-text">
+                  <p>
+                    동쪽에서 새로운 해가
+                  </p>
+                  <p>이윽고 떠올랐습니다.</p>
+                </div>
+              </div>
+              <div class="slide slide-left sl4" ref="sl4">
+                <div class="sl4-content">
+                  <div class="slide-big-text" ref="sl4-big">
+                    <p ref="sl4-big-1">자세한</p>
+                    <p ref="sl4-big-2">설명이</p>
+                    <p ref="sl4-big-3">있을 수도 있어요</p>
+                  </div>
+                  <div class="slide-small-text">
+                    <p>
+                      그렇습니다.
+                    </p>
+                    <p>
+                      이건
+                    </p>
+                    <p>
+                      글씨가 좀 작습니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="wave" ref="wave">
+                뭔가 독립적으로 움직이는 배경
+              </div>
+    
+              <div class="slide slide-left sl5" ref="sl5">
+                <div class="slide-big-text">
+                  <p>엘바노프 스튜디오는</p>
+                  <p>당신의 풍요로운</p>
+                  <p>나날을 꿈꿉니다.</p>
+                </div>
+                <div class="go-surf-wrapper">
+                  <a href="https://elvanov.com/2195" target="_blank">이 코드의 설명을 보려면 여기를 눌르세요.</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+    
+      </div> -->
+
+
+
+    
+ 
+
 
     </section>
     <footer>
