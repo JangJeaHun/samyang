@@ -282,3 +282,25 @@ section>article>.wrap #main_tab>li{
 section>article>.wrap #main_tab>li>a>img.tab_on{
     top:-80px !important;
 }
+
+section>article>.wrap .arrow{
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+}
+
+section>article>.wrap i{
+    border: 1px solid black;
+    width: 30px;
+    margin: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+section>article>.wrap .main_box1>div ,section>article>.wrap .main_box2>div ,section>article>.wrap .main_box3>div,section>article>.wrap .main_box4>div{
+    width: 204px;
+    display: inline-block;
+}
+.box_wrap2, .box_wrap3, .box_wrap4{
+    display: none;
+}
+
