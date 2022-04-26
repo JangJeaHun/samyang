@@ -328,6 +328,10 @@ section>article>.wrap .main_box1>div ,section>article>.wrap .main_box2>div ,sect
     width: 30%;
     height: 100%;
 }
+#community_l{
+    height: 700px;
+    border: #111 solid 1px;
+}
 #community_m{
     width: 40%;
     display: flex;
