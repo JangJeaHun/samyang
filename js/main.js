@@ -39,6 +39,7 @@ $(document).ready(function () {
 
     // slick_slide();
     subpage_menu();
+    company_tab();
 });
 
 
@@ -218,7 +219,10 @@ function subpage_menu(){
   },function(){
     $(this).children("ul").stop().slideUp();
   })
+}
 
-
-
+function company_tab(){
+  $("#commpany_start .wrap>#sub_tab li").click(function(){
+    $(this).addClass("on").siblings("li").removeClass("on");
+  })
 }
