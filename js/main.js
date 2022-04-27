@@ -38,7 +38,7 @@ $(document).ready(function () {
     })
 
     // slick_slide();
-
+    subpage_menu();
 });
 
 
@@ -210,128 +210,15 @@ function main_tab_click(){
 }
 
 
+function subpage_menu(){
+  $("#sub_title>.sub_navi>.wrap>.gnb>li, #sub_title>.sub_navi>.wrap>.gnb>li>.submenu").hover(function(){
+
+    
+    $(this).children("ul").stop().slideDown();
+  },function(){
+    $(this).children("ul").stop().slideUp();
+  })
 
 
 
-// function slick_slide(){
-//     $('#main_box1').slick({
-//         prevArrow : $('.prev_arrow'), 
-//         nextArrow : $('.next_arrow'), 
-//         centerMode: true,
-//         dots:false,
-//         swipe:true,
-//         arrows:true,
-//         centerPadding: '60px',
-//         slidesToShow: 5,
-//         responsive: [
-//           {
-//             breakpoint: 768,
-//             settings: {
-//               arrows: false,
-//               centerMode: true,
-//               centerPadding: '40px',
-//               slidesToShow: 3
-//             }
-//           },
-//           {
-//             breakpoint: 426,
-//             settings: {
-//               arrows: false,
-//               centerMode: true,
-//               centerPadding: '40px',
-//               slidesToShow: 1
-//             }
-//           }
-//         ]
-//       });
-//     $('#main_box2').slick({
-//         prevArrow : $('.prev_arrow'), 
-//         nextArrow : $('.next_arrow'), 
-//         centerMode: true,
-//         dots:false,
-//         swipe:true,
-//         arrows:true,
-//         centerPadding: '60px',
-//         slidesToShow: 5,
-//         responsive: [
-//           {
-//             breakpoint: 768,
-//             settings: {
-//               arrows: false,
-//               centerMode: true,
-//               centerPadding: '40px',
-//               slidesToShow: 3
-//             }
-//           },
-//           {
-//             breakpoint: 426,
-//             settings: {
-//               arrows: false,
-//               centerMode: true,
-//               centerPadding: '40px',
-//               slidesToShow: 1
-//             }
-//           }
-//         ]
-//       });
-//     $('#main_box3').slick({
-//         prevArrow : $('.prev_arrow'), 
-//         nextArrow : $('.next_arrow'), 
-//         centerMode: true,
-//         dots:false,
-//         swipe:true,
-//         arrows:true,
-//         centerPadding: '60px',
-//         slidesToShow: 5,
-//         responsive: [
-//           {
-//             breakpoint: 768,
-//             settings: {
-//               arrows: false,
-//               centerMode: true,
-//               centerPadding: '40px',
-//               slidesToShow: 3
-//             }
-//           },
-//           {
-//             breakpoint: 426,
-//             settings: {
-//               arrows: false,
-//               centerMode: true,
-//               centerPadding: '40px',
-//               slidesToShow: 1
-//             }
-//           }
-//         ]
-//       });
-//     $('#main_box4').slick({
-//         prevArrow : $('.prev_arrow'), 
-//         nextArrow : $('.next_arrow'), 
-//         centerMode: true,
-//         dots:false,
-//         swipe:true,
-//         arrows:true,
-//         centerPadding: '60px',
-//         slidesToShow: 5,
-//         responsive: [
-//           {
-//             breakpoint: 768,
-//             settings: {
-//               arrows: false,
-//               centerMode: true,
-//               centerPadding: '40px',
-//               slidesToShow: 3
-//             }
-//           },
-//           {
-//             breakpoint: 426,
-//             settings: {
-//               arrows: false,
-//               centerMode: true,
-//               centerPadding: '40px',
-//               slidesToShow: 1
-//             }
-//           }
-//         ]
-//       });
-// }
+}

@@ -451,3 +451,84 @@ footer>.wrap>.footer_r .footer_family{
     display: flex;
     flex-direction: column;
 }
+
+
+/* subpage commpany부문 */
+#sub_title>.bg_sub_title{
+    height: 240px;
+    background: url(../images/sub_slide.jpg);
+    text-align: center;
+    color: #fff;
+}
+#sub_title>.bg_sub_title>h3{
+font-size: 50px;
+padding: 50px 0;
+}
+#sub_title>.bg_sub_title>span{
+    font-size: 20px;
+}
+#sub_title>.sub_navi{
+    border-bottom: solid 1px #eee;
+    height: 50px;
+}
+#sub_title>.sub_navi>.wrap{
+    display: flex;
+    justify-content: flex-start;
+}
+#sub_title>.sub_navi>.wrap>.gnb_wrap{
+    border-bottom: solid 1px #333;
+}
+#sub_title>.sub_navi>.wrap>.gnb>li{
+    float: left;
+}
+#sub_title>.sub_navi>.wrap>.gnb>li>a{
+    display: block;
+    width: 160px;
+    height: 50px;
+    text-align: left;
+    line-height: 50px;
+    padding-left: 20px;
+    font-size: 16px;
+    color: #333;
+    border: #eee solid 1px;
+    border-spacing: 1px;
+}
+#sub_title>.sub_navi>.wrap>.gnb .sel_list{
+    background: url(../images/sel_list.gif) no-repeat 138px center;
+}
+#sub_title>.sub_navi>.wrap>.gnb>li{
+    position: relative;
+}
+#sub_title>.sub_navi>.wrap>.gnb>li>.submenu{
+    position: absolute;
+    z-index: 9;
+    background-color: #fff;
+    display: none;
+}
+#sub_title>.sub_navi>.wrap>.gnb>li>.submenu a{
+    display: block;
+    width: 160px;
+    height: 35px;
+    text-align: left;
+    padding-left: 20px;
+    line-height: 35px;
+    font-size: 14px;
+    color: #666;
+    
+}
+
+#sub_title>.sub_navi>.wrap>.gnb>li>.submenu>li{
+    border: #eee solid 1px;
+}
+#sub_title>.sub_navi>.wrap>.gnb>li>.submenu>li:hover{
+    background-color: #dedede;
+}
+
+
+@media all and ( max-width: 769px ){
+
+}
+
+@media all and ( max-width: 425px ){
+
+}
