@@ -764,6 +764,13 @@ padding: 50px 0;
     color: #ff6a00;
     border-color: #ff6a00;
 }
+#company_history>div .history_wrap>div{
+    display: none;
+}
+#company_history>div .history_wrap>div:first-child{
+    display: block;
+}
+
 #company_history>div .history_list tr{
     border-bottom: 1px solid #e1e1e1;
 }
