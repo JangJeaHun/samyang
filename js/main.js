@@ -225,4 +225,5 @@ function company_tab(){
   $("#commpany_start .wrap>#sub_tab li").click(function(){
     $(this).addClass("on").siblings("li").removeClass("on");
   })
+  
 }
