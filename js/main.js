@@ -222,8 +222,13 @@ function subpage_menu(){
 }
 
 function company_tab(){
-  $("#commpany_start .wrap>#sub_tab li").click(function(){
+  $("#company_start .wrap>#sub_tab li").click(function(){
+    var idx = $(this).index();
+    console.log(idx);
+
     $(this).addClass("on").siblings("li").removeClass("on");
+
+    $("#company_start .wrap>.company_list>ul>li").eq(idx).show().addClass("active").siblings("li").hide().removeClass("active");
   })
   
 }
