@@ -32,14 +32,15 @@ $(document).ready(function () {
     main_tab_click();
     main_tab();
     $("#gnb,#m_back").hover(function(){
-        $(".sub,#m_back").stop().slideToggle();
+        $(".sub,#m_back").stop().slideDown();
     },function(){
-        $(".sub,#m_back").stop().slideToggle();
+        $(".sub,#m_back").stop().slideUp();
     })
 
     // slick_slide();
     subpage_menu();
     company_tab();
+    history_tab();
 });
 
 
@@ -224,11 +225,20 @@ function subpage_menu(){
 function company_tab(){
   $("#company_start .wrap>#sub_tab li").click(function(){
     var idx = $(this).index();
-    console.log(idx);
 
     $(this).addClass("on").siblings("li").removeClass("on");
 
     $("#company_start .wrap>.company_list>ul>li").eq(idx).show().addClass("active").siblings("li").hide().removeClass("active");
   })
-  
+}
+
+function history_tab(){
+  $("#company_history>div>.history_tab>li").click(function(){
+    var idx = $(this).index();
+    console.log(idx);
+
+    $(this).addClass("on").siblings("li").removeClass("on");
+
+    $("#company_history>div .history_list").eq(idx).show().addClass("active").siblings("div").hide().removeClass("active");
+  })
 }
