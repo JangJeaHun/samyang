@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    width: 100%;
+}
 body{
     font-family: "Noto Sans",'Noto Sans KR',"Nanum Gothic",sans-serif;
     font-size: 12px;
@@ -208,28 +211,61 @@ header>.main_header .wrap{
 #gnb .sub>li>a:hover{
     color: black;
 }
+#main_slide_wrap{
+    position: relative;
+}
 #slide{
     position: relative;
-    height: 592px;
-    overflow: hidden;
+    height: 100%;
+    display: block;
+    height: 520px;
+    
+}
+#main_slide_wrap>button{
+    cursor: pointer;
+    background: none;
+    border-radius: 50%;
+    border: #fff 1px solid;
+    bottom: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 999;
+}
+#main_slide_wrap>button:hover{
+    background-color: #eee;
+}
+#main_slide_wrap>button>i{
+    font-size: 4rem;
+    color: #fff;
+}
+#main_slide_wrap>.slick_prev{
+    left: 10%;
+}
+#main_slide_wrap>.slick_next{
+    right: 10%;
 }
 #slide>div{
-    display: none;
     width: 100%;
     position: absolute;
 }
 #slide>div img{
+    height: 507px;
     display: block;
-    object-fit: cover;
     width: 100%;
 }
 #slide>div:first-child{
     display: block;
 }
+section>.product_wrap{
+    display: block;
+    background: url(../images/bg_product.jpg) no-repeat;
+}
 section>article>.wrap{
     text-align: center;
 }
 section>article>.wrap>h3{
+    padding-top: 50px;
     color: #222;
     font-size: 46px;
     line-height: 46px;
@@ -815,11 +851,172 @@ padding: 50px 0;
     width: 520px;
 }
 
-
+#m_main_slide,#m_header_wrap{
+    display: none;
+}
 @media all and ( max-width: 769px ){
 
 }
 
 @media all and ( max-width: 425px ){
+    .wrap{
+        width: 425px;
+    }
+    
+    #slide img{
+        width: 100%;
+    }
+    #gnb_top,section>article>.wrap>h3,
+    section>article>.wrap>span,
+    section>article>.wrap>p,.main_header{
+        display: none;
+    }
+    #m_header_wrap{
+        display: block;
+        width: 100%;
+        height: 55px;
+        background: #ff6a00;
+    }
+    #m_header{
+        background: #ff6a00;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    #m_header .gnb_shop {
+        display: block;
+        float: left;
+        width: 45px;
+        height: 20px;
+        margin: 18px 0 0 15px;
+        color: #ff6a00;
+        font-family: "Noto Sans";
+        font-size: 0.7rem;
+        line-height: 20px;
+        font-weight: 500;
+        text-align: center;
+        border-radius: 3px;
+        background: #ffe1cc;
+    }
+    #m_header img{
+        width: 90px;
+        padding: 14px 0 0 0;
+    }
+    #m_header i{
+        display: block;
+        width: 100%;
+        font-size: 2rem;
+        color: #fff;
+    }
+    #m_header_menu{
+        overflow-x: auto;
+    }
+    #m_header_menu ul{
+        display: flex;
+        width: 9999999%;
+    }
+    #m_header_menu a{
+        display: inline-block;
+        padding: 0;
+        font-size: 15px;
+        font-weight: 600;
+        height: 46px;
+        line-height: 46px;
+        color: #666;
+    }
+    #m_header_menu li{
+        padding: 0 15px;
+    }
+
+
+
+
+
+
+
+
+    #main_slide_wrap{
+        display: none;
+    }
+    #m_main_slide{
+        display: block;
+        position: relative;
+    }
+    #m_main_slide img{
+        width: 100%;
+    }
+    .slick-dots{
+        position: absolute;
+        bottom: 5%;
+        left: 35%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .slick-dots li{
+        text-decoration: none;
+        background: #000;
+        color: #666;
+        border-radius: 5px;
+        padding-left: 10px;
+        outline: 0;
+    }
+    
+
+    section>article>.wrap #main_tab{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 40px;
+    }
+    section>article>.wrap #main_tab img{
+        display: none;
+    }
+
+    section>article>.wrap #main_tab li.on{
+        color: #fff;
+        border: 1px solid #ff6a00;
+        background: #ff6a00;
+    }
+    section>article>.wrap #main_tab li {
+        font-size: 15px;
+        color: #666;
+        border: #666 1px solid;
+        border-collapse: collapse;
+        border-spacing: 1px;
+        height: 35px;
+        line-height: 35px;
+        width: 192px;
+        padding: 0;
+    }
+    section>article>.wrap #main_tab li a{
+        height: 35px;
+        width: 192px;
+        padding: 0%;
+    }
+
+
+    #community{
+        display: none;
+    }
+    footer>.wrap{
+        flex-direction: column;
+    }
+    .footer_family img,.footer_l img{
+        display: none;
+    }
+    footer>.wrap>.footer_m>.footer_menu{
+        display: none;
+    }
+    footer>.wrap>.footer_r{
+        float: left;
+    }
 
 }
