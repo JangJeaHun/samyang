@@ -63,6 +63,7 @@ $(document).ready(function () {
     subpage_menu();
     company_tab();
     history_tab();
+    image_remove();
 });
 
 
@@ -73,8 +74,6 @@ function main_tab(){
 
         if(idx==0){
             $("section>article>.wrap #main_tab>li .tab01").stop().css({top:"-80px"});
-           
-            
         }else if(idx==1){
             $("section>article>.wrap #main_tab>li .tab02").stop().css({top:"-80px"});
         }else if(idx==2){
@@ -104,7 +103,7 @@ function main_tab(){
 function main_tab_click(){
     $("section>article>.wrap #main_tab>li").click(function(){
         var idx = $(this).index();
-        // console.log(idx);
+        console.log(idx);
 
         $("section>article>.wrap .tab_wrap .slide_wrap>div").eq(idx).show().siblings("div").hide();
 
@@ -263,4 +262,17 @@ function history_tab(){
 
     $("#company_history>div .history_list").eq(idx).show().addClass("active").siblings("div").hide().removeClass("active");
   })
+}
+
+function image_remove(){
+  var wid = window.outerWidth;
+  console.log(wid);
+
+  if(wid<=425){
+    $('.company_intro').css('background-image', 'url("")');
+    $('.vision_01,.vision_02').css('background-image', 'url("")');
+
+  }
+
+  // $(window).trigger("");
 }

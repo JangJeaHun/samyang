@@ -600,7 +600,7 @@ padding: 50px 0;
 #company_start .wrap>#sub_tab li.on{
     border-color: #ff6a00;
     border-bottom: 0;
-    z-index: 5;
+    z-index: 20;
 }
 .active{
     display: block;
@@ -623,10 +623,11 @@ padding: 50px 0;
 
 #company_start .company_list .company_intro p.intro_txt{
     color: #666;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 24px;
     height: 274px;
     text-align: left;
+    
 }
 #company_start .company_list .company_intro p.intro_txt.txt02{
     margin: 50px 0 0 665px;
@@ -854,11 +855,25 @@ padding: 50px 0;
 #m_main_slide,#m_header_wrap{
     display: none;
 }
+#m_header_menu{
+    display: none;
+}
+#company_start>article .company_list .company_intro p.intro_txt .m_compnay_img,
+#company_start .company_list .company_vision img,
+#m_footer
+{
+    display: none;
+}
 @media all and ( max-width: 769px ){
 
 }
 
 @media all and ( max-width: 425px ){
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+        }
+        
     .wrap{
         width: 425px;
     }
@@ -1002,12 +1017,23 @@ padding: 50px 0;
         padding: 0%;
     }
 
+    #main_box1 img{
+        width: 125px;
+        height: 125px;
+    }
+
+
+
+
+
+
 
     #community{
         display: none;
     }
     footer>.wrap{
         flex-direction: column;
+        display: none;
     }
     .footer_family img,.footer_l img{
         display: none;
@@ -1018,5 +1044,186 @@ padding: 50px 0;
     footer>.wrap>.footer_r{
         float: left;
     }
+    #m_footer{
+        display: block;
+    }
+    #m_footer>.m_footer_top>ul{
+        display: flex;
+        justify-content: space-around;
+        border-top: 1px  solid #bbb;
+    }
+    #m_footer>.m_footer_top>ul>li{
+        width: 115px;
+        height: 22px;
+        padding: 20px 0;
+        text-align: center;
+        align-items: center;
+        font-size: 15px;
+        color: #666;
+    }
+    #m_footer>.m_footer_top>ul>li>select{
+        font-size: 15px;
+        border: none;
+        color: #666;
+        font-family: "Noto Sans";
+    }
+
+    #m_footer>.m_footer_bottom, #m_addres{
+        background: #eaeaea;
+    }
+    #m_footer>.m_footer_bottom>ul{
+        display: flex;
+        justify-content: space-around;
+        border-top: 1px  solid #bbb;
+        border-bottom: 1px  solid #bbb;
+    }
+    #m_footer>.m_footer_bottom>ul>li{
+        width: 115px;
+        height: 22px;
+        padding: 20px 0;
+        text-align: center;
+        align-items: center;
+        font-size: 15px;
+        color: #666;
+    }
+    #m_addres>p{
+        font-size: 13px;
+        text-align: center;
+        color: #999;
+        padding: 20px 0;
+        height: 120px;
+    }
+    /* company 부문 */
+    body{
+        width: 426px;
+        overflow: hidden;
+    }
+    #sub_title{
+        display: none;
+    }
+    #sub_tab{
+        overflow-x: auto;
+        padding-left: 40px;
+    }
+    #sub_tab>ul{
+        padding-top: 10px;
+        border-top: 1px solid black;
+    }
+    #sub_tab>ul>li{
+        border: none;
+    }
+    #sub_tab>ul>li>a{
+        width: 100px;
+        display: block;
+    }
+    #company_start .wrap>#sub_tab li.on{
+        border-bottom: 5px solid #ff6a00;
+        z-index: 20;
+    }
+    
+    #m_header{
+        width: 425px;
+    }
+    #company_start>article .company_list .company_intro p.intro_txt{
+        word-wrap: break-word;
+        width: 400px;
+    }
+    #company_start>article .company_list .company_intro div{
+        width: 400px;
+        padding: 10px 0 0 10px;
+    }
+
+    #company_start>article .company_list .company_intro p.intro_txt.txt02,
+    #company_start>article .company_list .company_intro p.intro_txt.txt05 {
+        margin: 0;
+    }
+
+    #company_start>article .company_list .company_intro p.intro_txt .m_compnay_img{
+        display: block;
+        width: 400px;
+    }
+    
+
+    /* vision 부문 */
+    #company_start .company_list .company_vision{
+        height: 1400px;
+    }
+
+    #company_start .company_list .company_vision .vision_01,
+    #company_start .company_list .company_vision .vision_02{
+        padding: 0;
+        margin: 0;
+    }
+
+    #company_start .company_list .company_vision .vision_01{
+        height: 800px;
+    }
+
+    #company_start .company_list .company_vision .vision_02 * {
+        padding-left: 20px;
+    }
+
+    #company_start .company_list .company_vision .vision_02 h4{
+        font-size: 1.3rem;
+        color: #ff6a00;
+    }
+    
+    #company_start .company_list .company_vision .vision_02 .vision_t1,
+    #company_start .company_list .company_vision .vision_02 .vision_t2{
+        color: #666;
+        font-size: 0.7rem;
+    }
+
+    #company_start .company_list .company_vision ul{
+        display: block;
+
+    }
+
+    #company_start .company_list .company_vision img{
+        display: block;
+        width: 420px;
+        text-align: center;
+    }
+
+/* CI 부문 */
+
+    
+    .company_ci img{
+        width: 420px;
+    }
+    .company_ci h4,
+    .company_ci p
+    
+    {
+        padding-left: 20px;
+    }
+
+    /* 연혁 부문 */
+    #company_history{
+        height: 1300px;
+    }
+    #company_history .history_tab{
+        padding: 0;
+        max-width: 420px;
+    }
+    #company_history>div>.history_tab>li{
+        margin: 0;
+        padding: 0;
+        width: 96px;
+        font-size: 12px;
+    }
+    #company_history>div .history_list tr>th{
+        font-size: 12px;
+        width: 70px;
+        padding: 10px 0 0 0 ;
+        line-height: 12px;
+    }
+    #company_history>div .history_list tr td{
+        padding: 0;
+        font-size: 12px;
+        width: 300px;
+        word-wrap: normal;
+    }
+
 
 }
