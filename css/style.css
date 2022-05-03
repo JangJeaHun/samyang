@@ -1124,9 +1124,14 @@ padding: 50px 0;
     #m_header{
         width: 425px;
     }
+    #company_start .company_list .company_intro{
+        height: 3900px;
+    }
     #company_start>article .company_list .company_intro p.intro_txt{
         word-wrap: break-word;
         width: 400px;
+        white-space: pre-line;
+        display: inline-block;
     }
     #company_start>article .company_list .company_intro div{
         width: 400px;
@@ -1137,7 +1142,10 @@ padding: 50px 0;
     #company_start>article .company_list .company_intro p.intro_txt.txt05 {
         margin: 0;
     }
+    #company_start>article .company_list .company_intro p.intro_txt img{
+        display: block;
 
+    }
     #company_start>article .company_list .company_intro p.intro_txt .m_compnay_img{
         display: block;
         width: 400px;
