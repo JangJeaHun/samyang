@@ -397,7 +397,7 @@ font-weight: 300;
     width: 30%;
 }
 .video{
-    background-image: url(images/vod_bg.png);
+    background-image: url(../images/vod_bg.png);
     background-repeat: no-repeat;
     background-position: right;
     height: 50%;
@@ -408,7 +408,7 @@ font-weight: 300;
 
 .story{
     height: 30%;
-    background: #91c749 url(images/bg_comm_tab04.png) no-repeat right;
+    background: #91c749 url(../images/bg_comm_tab04.png) no-repeat right;
 }
 .story>.story_text,.recipe_text,.notice_text,.shop_text{
     padding: 30px;
