@@ -216,11 +216,25 @@ header>.main_header .wrap{
 }
 #slide{
     position: relative;
-    height: 100%;
     display: block;
-    height: 520px;
+    height: 573px;
     
 }
+
+
+#slide>div{
+    width: 100%;
+    position: absolute;
+}
+#slide>div img{
+    height: 573px;
+    display: block;
+    width: 100%;
+}
+#slide>div:first-child{
+    display: block;
+}
+
 #main_slide_wrap>button{
     cursor: pointer;
     background: none;
@@ -245,18 +259,7 @@ header>.main_header .wrap{
 #main_slide_wrap>.slick_next{
     right: 10%;
 }
-#slide>div{
-    width: 100%;
-    position: absolute;
-}
-#slide>div img{
-    height: 507px;
-    display: block;
-    width: 100%;
-}
-#slide>div:first-child{
-    display: block;
-}
+
 section>.product_wrap{
     display: block;
     background: url(../images/bg_product.jpg) no-repeat;
